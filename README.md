@@ -1,7 +1,7 @@
 <div align="center">
   <img src="build/appicon.png" alt="GUI.for.Clash" width="200">
   <h1>GUI.for.Clash</h1>
-  <p>A GUI program developed by vue3 + wails.</p>
+  <p>A GUI program developed by vue3 + wails3.</p>
 </div>
 
 ## Preview
@@ -25,18 +25,24 @@
 
 - Go [link](https://go.dev/)
 
-- Wails [link](https://wails.io/) ：`go install github.com/wailsapp/wails/v2/cmd/wails@latest`
+- Wails3 [link](https://wails.io/)
 
 2、Pull and Build
 
 ```bash
 git clone https://github.com/GUI-for-Cores/GUI.for.Clash.git
 
-cd GUI.for.Clash/frontend
+cd GUI.for.Clash
+
+git clone -b v3-alpha --depth=1 https://github.com/wailsapp/wails.git
+
+cd wails/v3/cmd/wails3 && go install
+
+cd ../../../../frontend
 
 pnpm install
 
-pnpm build
+pnpm build-only
 
 cd ..
 
