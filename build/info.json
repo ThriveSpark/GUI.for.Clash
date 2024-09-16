@@ -1,0 +1,15 @@
+{
+  "fixed": {
+    "file_version": "0.1.0"
+  },
+  "info": {
+    "0000": {
+      "ProductVersion": "0.1.0",
+      "CompanyName": "GUI-for-Cores",
+      "FileDescription": "A GUI program developed by vue3 + wails.",
+      "LegalCopyright": "© now, GUI-for-Cores",
+      "ProductName": "GUI.for.Clash",
+      "Comments": "A GUI program developed by vue3 + wails."
+    }
+  }
+}
