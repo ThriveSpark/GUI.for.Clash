@@ -40,13 +40,11 @@ cd wails/v3/cmd/wails3 && go install
 
 cd ../../../../frontend
 
-pnpm install
-
-pnpm build-only
+pnpm install && pnpm build-only
 
 cd ..
 
-wails build
+wails3 build
 ```
 
 ## Stargazers over time
