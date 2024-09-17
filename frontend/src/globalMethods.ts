@@ -14,7 +14,11 @@ window.Plugins = {
   YAML: {
     parse,
     stringify
-  }
+  },
+  BrowserOpenURL: Bridge.Browser.OpenURL,
+  ClipboardSetText: Bridge.Clipboard.SetText,
+  ClipboardGetText: Bridge.Clipboard.Text,
+  WindowReloadApp: Bridge.Window.Reload
 }
 
 window.AsyncFunction = Object.getPrototypeOf(async function () {}).constructor
