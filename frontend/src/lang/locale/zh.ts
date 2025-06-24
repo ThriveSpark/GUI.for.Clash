@@ -181,11 +181,13 @@ export default {
         fallback: '自动回退',
         relay: '链式代理',
         'load-balance': '负载均衡',
+        smart: '智能选择',
         Selector: '手动选择',
         UrlTest: '自动选择',
         Fallback: '自动回退',
         Relay: '链式代理',
         LoadBalance: '负载均衡',
+        Smart: '智能选择',
       },
       strategy: {
         name: '负载均衡策略',

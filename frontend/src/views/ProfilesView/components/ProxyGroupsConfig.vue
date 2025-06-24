@@ -51,6 +51,10 @@ const fields = ref<GroupsType[number]>({
   'exclude-filter': '',
   hidden: false,
   icon: '',
+  'include-all': false,
+  'policy-priority': '',
+  uselightgbm: false,
+  collectdata: false,
 })
 
 const { t } = useI18n()
@@ -74,6 +78,10 @@ const handleAdd = () => {
     'exclude-filter': '',
     hidden: false,
     icon: '',
+    'include-all': false,
+    'policy-priority': '',
+    uselightgbm: false,
+    collectdata: false,
   }
   showModal.value = true
 }
@@ -163,7 +171,9 @@ const isInuse = (groupID: string, proxyID: string) => {
 }
 
 const isSupportInverval = computed(() =>
-  [ProxyGroup.UrlTest, ProxyGroup.Fallback, ProxyGroup.LoadBalance].includes(fields.value.type),
+  [ProxyGroup.UrlTest, ProxyGroup.Fallback, ProxyGroup.LoadBalance, ProxyGroup.Smart].includes(
+    fields.value.type,
+  ),
 )
 
 const hasLost = (g: GroupsType[0]) => {

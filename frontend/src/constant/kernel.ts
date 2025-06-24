@@ -111,6 +111,10 @@ export const GroupsTypeOptions = [
     label: 'kernel.proxyGroups.type.load-balance',
     value: ProxyGroup.LoadBalance,
   },
+  {
+    label: 'kernel.proxyGroups.type.smart',
+    value: ProxyGroup.Smart,
+  },
 ]
 
 export const StrategyOptions = [

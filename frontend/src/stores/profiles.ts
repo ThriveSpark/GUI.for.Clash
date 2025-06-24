@@ -114,6 +114,10 @@ export type ProfileType = {
     'exclude-filter': string
     hidden: boolean
     icon: string
+    'include-all': boolean
+    'policy-priority': string
+    uselightgbm: boolean
+    collectdata: boolean
   }[]
   rulesConfig: {
     id: string

@@ -132,6 +132,10 @@ export const generateProxyGroup = (
     'exclude-filter': ExcludeFilter,
     hidden,
     icon,
+    'include-all': includeAll,
+    'policy-priority': policyPriority,
+    uselightgbm,
+    collectdata,
   } = proxyGruoup
 
   const group: any = { name, type, filter, 'exclude-filter': ExcludeFilter, hidden, icon }
@@ -182,6 +186,13 @@ export const generateProxyGroup = (
     })
   } else if (type === ProxyGroup.Relay) {
     Object.assign(group, {})
+  } else if (type === ProxyGroup.Smart) {
+    Object.assign(group, {
+      'include-all': includeAll,
+      'policy-priority': policyPriority,
+      uselightgbm,
+      collectdata,
+    })
   }
 
   return group

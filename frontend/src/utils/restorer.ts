@@ -80,6 +80,10 @@ export const restoreProfile = (
       'exclude-filter': group['exclude-filter'] ?? '',
       hidden: group.hidden ?? false,
       icon: group.icon ?? '',
+      'include-all': false,
+      'policy-priority': '',
+      uselightgbm: false,
+      collectdata: false,
     }
 
     profile.proxyGroupsConfig.push(_group)
